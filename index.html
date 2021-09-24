@@ -11,7 +11,7 @@
     <link rel="canonical" href="https://flops.hsen.tech">
 
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 
     <style>
       /* .bd-placeholder-img {
@@ -30,7 +30,7 @@
     </style>
 
     <!-- Custom styles -->
-    <link href="css/main.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
   </head>
 
   <body class="d-flex flex-column h-100">
@@ -51,22 +51,30 @@
           </div>
 
           <div class="row mt-5 p-3 text-center">
-            <button class="col p-2 shadow-lg border border-info border-3 rounded-3">
+            <button class="ans-btn col p-2 shadow-lg bg-light border border-info border-3 rounded-3">
               <h1 class="display-3" id="id_ans-text-1">4</h1>
             </button>
             <span class="col-1"></span>
-            <button class="col p-2 shadow-lg border border-info border-3 rounded-3">
+            <button class="ans-btn col p-2 shadow-lg bg-light border border-info border-3 rounded-3">
               <h1 class="display-3" id="id_ans-text-2">5</h1>
             </button>
           </div>
           <div class="row mt-2 p-3 text-center">
-            <button class="col p-2 shadow-lg border border-info border-3 rounded-3">
+            <button class="ans-btn col p-2 shadow-lg bg-light border border-info border-3 rounded-3">
               <h1 class="display-3" id="id_ans-text-3">3</h1>
             </button>
             <span class="col-1"></span>
-            <button class="col p-2 shadow-lg border border-info border-3 rounded-3">
+            <button class="ans-btn col p-2 shadow-lg bg-light border border-info border-3 rounded-3">
               <h1 class="display-3" id="id_ans-text-4">2</h1>
             </button>
+          </div>
+          <!-- <div class="my-2 text-center">
+            <button class="col p-2 shadow-sm bg-light border">
+              Skip to next
+            </button>
+          </div> -->
+          <div class="my-2">
+            <span class="text-muted" id="id_ans-record"></span>
           </div>
 
         </div>
@@ -82,5 +90,8 @@
     </footer>
 
   </body>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
 
 </html>
