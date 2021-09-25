@@ -1,2 +1,7 @@
 # flops
-Web page for practising arithmatic operations and increasing number sense
+
+Web page for practicing arithmetic operations and improving number sense. 
+
+[Flops](https://flops.pages.dev)
+
+![screenshot](images/screenshot.jpg)
