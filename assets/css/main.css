@@ -5,3 +5,14 @@ main > .container {
   padding: 20px 15px 0;
 }
 
+.ans-btn {
+  transition: all .1s ease-in-out; 
+}
+  
+.ans-btn:hover { 
+  transform: scale(1.02); 
+}
+
+.ans-btn:active { 
+  transform: scale(0.9); 
+}

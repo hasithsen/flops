@@ -39,6 +39,7 @@ $(document).ready(function () {
     }
     $('#id_ans-record').text($('#id_ans-record').text() + ' ' + ans_record_symbol);
     $('#id_current-exp').css('pointer-events', 'none');
+
     $('#id_current-exp').fadeOut('fast', function () {
       new_exp();
       $('#id_current-exp').css('pointer-events', 'auto');
