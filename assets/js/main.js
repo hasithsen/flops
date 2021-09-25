@@ -26,7 +26,6 @@ $(document).ready(function () {
 
     $('#id_exp-text').text(operand1.toString() + operators[op_idx] + operand2.toString());
     for (let i = 1; i < 5; i++) {
-      console.log(answers[i]);
       $('#id_ans-text-' + i).text(answers[i - 1]);
     }
   };
@@ -39,7 +38,12 @@ $(document).ready(function () {
       ans_record_symbol = '\u2022';
     }
     $('#id_ans-record').text($('#id_ans-record').text() + ' ' + ans_record_symbol);
-    new_exp();
+    $('#id_current-exp').css('pointer-events', 'none');
+    $('#id_current-exp').fadeOut('fast', function () {
+      new_exp();
+      $('#id_current-exp').css('pointer-events', 'auto');
+    });
+    $('#id_current-exp').fadeIn('fast');
   }
 
   $('.ans-btn').on('click', function (event) {
